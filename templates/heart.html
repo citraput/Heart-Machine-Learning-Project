@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Klasifikasi Heart Disease</title>
+</head>
+<body>
+    <h1>Klasifikasi Heart Disease</h1>
+
+    <form action="http://127.0.0.1:5000/klasifikasi" method="POST">
+        <p>Age:</p>
+        <input type="number" name="age" />
+        <p>Sex:</p>
+        <input type="number" name="sex">
+        <p>Chest Pain:</p>
+        <input type="number" name="cp" />
+        <p>Resting Blood Pressure:</p>
+        <input type="number" name="trestbos">
+        <p>Serum cholestoral in mg/dl:</p>
+        <input type="number" name="chol">
+        <p>Fasting blood sugar > 120 mg/dl:</p>
+        <input type="number" name="fbs">
+        <p>Resting electrocardiographic results:</p>
+        <input type="number" name="restecg">
+        <p>maximum heart rate achieved:</p>
+        <input type="number" name="thalach">
+        <p>Exercise induced angine:</p>
+        <input type="number" name="exang">
+
+        <p>ST depression induced by exercise relative to rest:</p>
+        <input type="number" name="oldpeak">
+        <p>slope of the peak exercise ST segment:</p>
+        <input type="number" name="slope">
+        <p>Number of major vessels colored by flouroscopy (0 - 3)</p>
+        <input type="number" name="ca">
+        <p>Thal:</p>
+        <input type="number" name="thal">
+
+
+        <input type="submit" value="Classify">
+    </form>
+</body>
+</html>
